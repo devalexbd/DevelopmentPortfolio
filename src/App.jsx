@@ -10,9 +10,22 @@ function App() {
       <Header />
 
       <div className="section">
-        <h1>Alex Dunkley</h1>
-        <h2>Software Developer</h2>
-        <p>Here is some more text.</p>
+        <p className="code-text">&#60;Title </p>
+        <div className="title">
+          <p className="code-text">name = &#10100;</p>
+          <h1>Alex Dunkley</h1>
+          <p className="code-text">&#10101;</p>
+        </div>
+        <div className="title">
+          <p className="code-text">role = &#10100;</p>
+          <h2>Software Developer</h2>
+          <p className="code-text">&#10101;</p>
+        </div>
+        <div className="title">
+          <p className="code-text">description = &#10100;</p>
+          <p>Here is some more text.</p>
+          <p className="code-text">&#10101;&#47;&#62;</p>
+        </div>
       </div>
 
       <div className="section-main">

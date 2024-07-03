@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(150, 60, 206);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(196, 130, 237);
+}
+
 body {
   /* font-family: "Quicksand", sans-serif; */
   font-weight: 300;
@@ -32,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10vh 5vw;
+  margin: 10vh 5vw 15vh 5vw;
   /* background-color: rgba(0, 0, 0, 0.5); */
   height: 50vh;
   /* text-align: center; */
@@ -48,8 +68,11 @@ body {
   font-size: 4vh;
 }
 
-.section p {
-  font-size: 2vh;
+.code-text {
+  font-size: 3vh;
+  margin: 0;
+  color: rgb(255, 255, 255, 0.35);
+  user-select: none;
 }
 
 .section-main {
@@ -59,6 +82,21 @@ body {
   color: white;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
   margin: 0;
+}
+
+@media (max-width:600px){
+  .section {
+    margin-top: 0;
+  }
+  .section h1 {
+    font-size: 5vh;
+  }
+  .section h2 {
+    font-size: 3vh;
+  }
+  .code-text {
+    font-size: 2vh;
+  }
 }
 
 .square-container {
@@ -73,6 +111,11 @@ body {
   .square-container {
     height: 50%;
   }
+}
+
+.title {
+  display: flex;
+  align-items: center;
 }
 
 .square {

@@ -52,11 +52,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10vh 5vw 15vh 5vw;
+  margin: 10vh 5vw 3vh 5vw;
   /* background-color: rgba(0, 0, 0, 0.5); */
   height: 50vh;
   /* text-align: center; */
-  z-index: 0;
+  z-index: 1;
 }
 
 .section h1 {
@@ -76,7 +76,7 @@ body {
 }
 
 .section-main {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: #202020;
   color: white;
@@ -99,102 +99,167 @@ body {
   }
 }
 
-.square-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transition: 0.35s;
-}
-
-@media (max-width:500px){
-  .square-container {
-    height: 50%;
-  }
-}
-
 .title {
   display: flex;
   align-items: center;
 }
 
+.background-element {
+  position: relative;
+  background-color: #202020;
+  width: 100%;
+  height: 60vh;
+  z-index: -1;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
 .square {
   position: absolute;
-  top: -15%;
   left: 5%;
-  width: 10vw;
-  height: 7vh;
-  background-color: #202020;
-}
-
-.square:nth-child(1) {
-  position: absolute;
-  top: -25%;
-  left: 17%;
-  width: 7vw;
-  height: 10vh;
-  background-color: #202020;
-}
-
-.square:nth-child(2) {
-  position: absolute;
-  top: -20%;
-  left: 30%;
-  width: 12vw;
-  height: 8vh;
-  background-color: #202020;
-}
-
-.square:nth-child(3) {
-  position: absolute;
   top: -10%;
-  left: 40%;
   width: 10vw;
-  height: 5vh;
-  background-color: #202020;
-}
-
-.square:nth-child(4) {
-  position: absolute;
-  top: -38%;
-  left: 45%;
-  width: 6vw;
-  height: 15vh;
-  background-color: #202020;
-}
-
-.square:nth-child(5) {
-  position: absolute;
-  top: -30%;
-  left: 50%;
-  width: 20vw;
-  height: 13vh;
-  background-color: #202020;
-}
-
-.square:nth-child(6) {
-  position: absolute;
-  top: -75%;
-  left: 70%;
-  width: 20vw;
-  height: 30vh;
-  background-color: #202020;
-}
-
-.square:nth-child(7) {
-  position: absolute;
-  top: -50%;
-  left: 79%;
-  width: 20vw;
   height: 20vh;
   background-color: #202020;
 }
 
-.sub-section {
-  margin: 8vh 8vw;
-  color: rgb(218, 218, 218);
+.square:nth-child(1) {
+  background-color: #202020;
+  width: 15vw;
+  left: 20%;
+  top: -15%;
 }
 
-.sub-section h1 {
-  margin: 0;
+.square:nth-child(2){
+  width: 15vw;
+  left: 30%;
+}
+
+.square:nth-child(3){
+  width: 10vw;
+  left: 48%;
+  top: -25%;
+}
+
+.square:nth-child(4){
+  width: 15vw;
+  left: 55%;
+  top: -20%;
+}
+
+.square:nth-child(5){
+  width: 20vw;
+  left: 70%;
+  top: -30%;
+}
+
+.square:nth-child(6){
+  width: 10vw;
+  left: 89%;
+  top: -15%;
+}
+
+.square:nth-child(7){
+  width: 15vw;
+  left: 8%;
+  top: 80%;
+}
+
+.square:nth-child(8){
+  width: 15vw;
+  left: 20%;
+  top: 75%;
+}
+
+.square:nth-child(9){
+  width: 10vw;
+  left: 47%;
+  top: 82%;
+}
+
+.square:nth-child(10){
+  width: 20vw;
+  left: 65%;
+  top: 73%;
+}
+
+
+.info-box {
+  position: absolute;
+  /* background-color: #1000f7; */
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+  color: rgb(218, 218, 218);
+  width: 100%;
+}
+
+.sub-section button {
+  color: rgb(165, 90, 165);
+  background-color: #202020;
+  border: 2px rgb(165, 90, 165) solid;
+  border-radius: 20px;
+  height: 5vh;
+  width: 10vw;
+  font-size: 90%;
+  transition: 0.35s;
+  margin: 3vh 0;
+}
+
+.sub-section button:hover {
+  scale: 104%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgb(165, 90, 165));
+}
+
+.project-button.selected {
+  background-color: rgb(165, 90, 165);
+  color: #202020;
+}
+
+.sub-section-button-box {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.project-section {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 50vh;
+  /* background-color: blue; */
+  overflow-x: scroll;
+  justify-content: space-evenly;
+}
+
+@media (max-width:1000px){
+  .project-section{
+    gap: 3vw;
+  }
+  .sub-section-button-box {
+    width: 100%;
+  }
+  .sub-section button {
+    width: 30%;
+  }
+}
+
+
+
+.code-section {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
 }

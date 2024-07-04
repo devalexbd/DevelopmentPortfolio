@@ -1,0 +1,26 @@
+[
+    {
+        "projectname" : "E-Commerce Site",
+        "description" : "Personal project for week 15 of the Iungo software development bootcamp.",
+        "projectimage" : "src/assets/images/project_ecommerce.png",
+        "current" : "yes"
+    },
+    {
+        "projectname" : "Banking App",
+        "description" : "Creating a banking app that could deposit and withdraw funds. I was also given the added task of completing this in TypeScript.",
+        "projectimage" : "src/assets/images/project_banking.png",
+        "current" : "no"
+    },
+    {
+        "projectname" : "Dr. Who Episode Tracker",
+        "description" : "A fun personal project of mine. The current aim of the project is to provide a way of tracking episodes you've watched, whilst also providing fun little bits on the side.",
+        "projectimage" : "src/assets/images/project_drwho.png",
+        "current" : "yes"
+    },
+    {
+        "projectname" : "Glossary Site",
+        "description" : "A test to create a glossary of terms. Clicking on each in the list will change the presented information and images on the right.",
+        "projectimage" : "src/assets/images/project_glossary.png",
+        "current" : "no"
+    }
+]

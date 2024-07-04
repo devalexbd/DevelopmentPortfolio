@@ -1,0 +1,22 @@
+.code-segment {
+    display: flex;
+    height: 20vh;
+    color: #202020;
+    align-items: center;
+    transition: 0.35s;
+}
+
+.code-segment h2 {
+    font-size: 7vh;
+    margin-left: 0.5vw;
+}
+
+.code-segment img {
+    height: 80%;
+}
+
+.code-segment:hover {
+    filter: drop-shadow(0 0 5px rgb(165, 90, 165));
+    scale: 108%;
+    cursor: pointer;
+}

@@ -27,7 +27,7 @@ function App() {
         </div>
         <div className="title">
           <p className="code-text">description = &#10100;</p>
-          <p>This is my software development portfolio!</p>
+          <p className="section-description">Developer based in Bristol, UK.</p>
           <p className="code-text">&#10101;&#47;&#62;</p>
         </div>
       </div>

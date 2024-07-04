@@ -1,6 +1,6 @@
 .code-segment {
     display: flex;
-    height: 20vh;
+    height: 17vh;
     color: #202020;
     align-items: center;
     transition: 0.35s;
@@ -17,6 +17,15 @@
 
 .code-segment:hover {
     filter: drop-shadow(0 0 5px rgb(165, 90, 165));
-    scale: 108%;
+    scale: 103%;
     cursor: pointer;
+}
+
+@media (max-width:500px){
+    .code-segment {
+        height: 10vh;
+    }
+    .code-segment h2 {
+        font-size: 5vh;
+    }
 }

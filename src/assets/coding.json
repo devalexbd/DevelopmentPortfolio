@@ -1,22 +1,22 @@
 [
     {
-        "codelogo" : "src/assets/images/logo_html5.png",
+        "codelogo" : "images/logo_html5.png",
         "codename" : "HTML"
     },
     {
-        "codelogo" : "src/assets/images/logo_css.png",
+        "codelogo" : "images/logo_css.png",
         "codename" : "CSS"
     },
     {
-        "codelogo" : "src/assets/images/logo_javascript.png",
+        "codelogo" : "images/logo_javascript.png",
         "codename" : "JavaScript"
     },
     {
-        "codelogo" : "src/assets/images/logo_typescript.png",
+        "codelogo" : "images/logo_typescript.png",
         "codename" : "TypeScript"
     },
     {
-        "codelogo" : "src/assets/images/logo_react.png",
+        "codelogo" : "images/logo_react.png",
         "codename" : "React"
     }
 ]

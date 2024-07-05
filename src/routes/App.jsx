@@ -46,6 +46,7 @@ function App() {
                     name = {project.projectname}
                     description = {project.description}
                     key = {index}
+                    link = {project.link}
                     />
                   </>
                 )
@@ -63,6 +64,7 @@ function App() {
                     name = {project.projectname}
                     description = {project.description}
                     key = {index}
+                    link = {project.link}
                     />
                   </>
                 )

@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
-  RouterProvider,
+  HashRouter as Router,
+  Routes,
+  Route
 } from "react-router-dom"
 import './index.css'
 import Root from './routes/root.jsx'
@@ -11,30 +12,21 @@ import Contact from './routes/Contact.jsx'
 import App from './routes/App.jsx'
 import AboutMe from './routes/AboutMe.jsx'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <App />
-      },
-      {
-        path: "aboutme",
-        element: <AboutMe />
-      },
-      {
-        path: "contact",
-        element: <Contact />
-      }
-    ]
-  }
-])
+const MainApp = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<Root />}>
+        <Route index element={<App />}/>
+        <Route path="aboutme" element={<AboutMe />}/>
+        <Route path="contact" element={<Contact />}/>
+        <Route path="*" element={<ErrorPage />}/>
+      </Route>
+    </Routes>
+  </Router>
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MainApp />
   </React.StrictMode>,
 )

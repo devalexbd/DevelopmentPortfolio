@@ -1,4 +1,5 @@
 import '../assets/styles/Header.css'
+import { Link } from "react-router-dom"
 
 export default function Header(){
 
@@ -6,13 +7,13 @@ export default function Header(){
         <>
             <div className="header">
                 <div className="header-button">
-                    <a href="/">Home</a>
+                    <h3><Link to="/">Home</Link></h3>
                 </div>
                 <div className="header-button">
-                    <a href="/aboutme">About Me</a>
+                    <h3><Link to="aboutme">About Me</Link></h3>
                 </div>
                 <div className="header-button">
-                    <a href="/contact">Contact</a>
+                    <h3><Link to="contact">Contact</Link></h3>
                 </div>
             </div>
         </>

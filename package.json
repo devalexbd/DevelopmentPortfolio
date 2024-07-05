@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://alexbd.dev",
+  "homepage": "https://alexbd.dev",
   "name": "portfolioreact",
   "private": true,
   "version": "0.0.0",
@@ -7,16 +7,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "clean" : "rm -rf dist"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.24.0"
+    "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -1,18 +1,15 @@
 import { useState, useRef, useEffect } from 'react'
-import './App.css'
-import Header from './components/Header'
-import projectData from './assets/projects.json'
-import ProjectPreview from './components/ProjectPreview'
-import codeData from './assets/coding.json'
-import Code from './components/Code'
+import '../assets/styles/App.css'
+import projectData from '../data/projects.json'
+import ProjectPreview from '../components/ProjectPreview'
+import codeData from '../data/coding.json'
+import Code from '../components/Code'
 
 function App() {
   const [projects, setProjects] = useState(0)
 
   return (
     <>
-      <Header />
-
       <div className="section">
         <p className="code-text">&#60;Title </p>
         <div className="title">

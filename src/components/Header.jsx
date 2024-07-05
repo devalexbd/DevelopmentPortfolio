@@ -6,13 +6,13 @@ export default function Header(){
         <>
             <div className="header">
                 <div className="header-button">
-                    <h3>Home</h3>
+                    <a href="/">Home</a>
                 </div>
                 <div className="header-button">
-                    <h3>About Me</h3>
+                    <a href="/aboutme">About Me</a>
                 </div>
                 <div className="header-button">
-                    <h3>Contact</h3>
+                    <a href="/contact">Contact</a>
                 </div>
             </div>
         </>

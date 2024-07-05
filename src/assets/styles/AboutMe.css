@@ -1,0 +1,22 @@
+.aboutme-container {
+    margin: 10vh 5vh 0 5vw;
+}
+
+.aboutme-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    list-style-type: none;
+}
+
+@media (max-width:400px){
+    .aboutme-container {
+        margin: 3vh 2vh 0 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutme-container ul {
+        /* text-align: center; */
+        padding: 0;
+    }
+}

@@ -33,5 +33,12 @@
         "projectimage" : "images/project_carousel.png",
         "link" : "https://devalexbd.github.io/Carousel/",
         "current" : "no"
+    },
+    {
+        "projectname" : "Using APIs",
+        "description" : "Using APIs to display images and text.",
+        "projectimage" : "images/project_api.png",
+        "link" : "https://devalexbd.github.io/using-APIs/",
+        "current" : "no"
     }
 ]

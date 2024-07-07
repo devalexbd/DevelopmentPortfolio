@@ -279,3 +279,58 @@ body {
     gap: 0;
   }
 }
+
+/* FIXING REACT BUG - Would Load with incredibly large overflowing width */
+swiper-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100vh;
+
+  min-height: 0;
+  min-width: 0;
+}
+
+.project-slide {
+  margin: 5% 10%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  transition: 0.35s;
+}
+
+.project-slide:hover {
+  filter: drop-shadow(0 0 10px rgb(165, 90, 165));
+  cursor: pointer;
+}
+
+.swiper-image{
+  height: 20vh;
+  border-radius: 20px;
+}
+
+@media (max-width:600px) {
+  .swiper-image {
+    height: 15vh;
+  }
+}
+
+swiper-container::part(button-prev){
+  color: rgb(165, 90, 165);
+}
+
+swiper-container::part(button-next){
+  color: rgb(165, 90, 165);
+}
+
+swiper-container::part(bullet-active){
+  background-color: rgb(165, 90, 165);
+}
+
+swiper-slide {
+  height: 100%;
+}

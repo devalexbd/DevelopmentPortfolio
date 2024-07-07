@@ -26,5 +26,12 @@
         "projectimage" : "images/project_glossary.png",
         "link" : "https://devalexbd.github.io/glossary",
         "current" : "no"
+    },
+    {
+        "projectname" : "Swiper Test",
+        "description" : "Creating a modern slider using Swiper.js.",
+        "projectimage" : "images/project_carousel.png",
+        "link" : "https://devalexbd.github.io/Carousel/",
+        "current" : "no"
     }
 ]

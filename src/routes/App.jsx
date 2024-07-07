@@ -1,3 +1,7 @@
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 import { useState, useRef, useEffect } from 'react'
 import '../assets/styles/App.css'
 import projectData from '../data/projects.json'
@@ -7,6 +11,40 @@ import Code from '../components/Code'
 
 function App() {
   const [projects, setProjects] = useState(0)
+  const [slidesPerView, setSlidesPerView] = useState(2)
+
+  const swiperRef = useRef(null)
+
+  useEffect(() => {
+    if(swiperRef.current){
+      swiperRef.current.swiper.update()
+    }
+  }, [projects])
+
+  useEffect(() => {
+    const handleResize = () => {
+      if(window.innerWidth < 850){
+        setSlidesPerView(1)
+      } else {
+        setSlidesPerView(2)
+      }
+    }
+
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+
+  })
+
+  function openProject(URL){
+    if(URL != ""){
+        window.open(URL, '_blank')
+    }
+  }
 
   return (
     <>
@@ -36,18 +74,19 @@ function App() {
             <button onClick={() => setProjects(1)} className={`project-button ${projects == 1 ? 'selected' : ''}`}>Old Projects</button>
           </div>
           <div className="project-section">
+            <swiper-container ref={swiperRef} slides-per-view={slidesPerView} speed="500" loop="false" css-mode="true" navigation="true" pagination="true">
             {projects === 0 &&
             projectData.map((project, index) => {
               if(project.current == "yes"){
                 return(
                   <>
-                    <ProjectPreview
-                    image = {project.projectimage}
-                    name = {project.projectname}
-                    description = {project.description}
-                    key = {index}
-                    link = {project.link}
-                    />
+                    <swiper-slide key={index}>
+                      <div className="project-slide" onClick={() => openProject(project.link)} key={index}>
+                        <img src={project.projectimage} alt="Project Image" className='swiper-image'/>
+                        <h4>{project.projectname}</h4>
+                        <p>{project.description}</p>
+                      </div>
+                    </swiper-slide>
                   </>
                 )
               }
@@ -59,18 +98,19 @@ function App() {
               if(project.current == "no"){
                 return(
                   <>
-                    <ProjectPreview
-                    image = {project.projectimage}
-                    name = {project.projectname}
-                    description = {project.description}
-                    key = {index}
-                    link = {project.link}
-                    />
+                    <swiper-slide key={index}>
+                      <div className="project-slide" onClick={() => openProject(project.link)}>
+                        <img src={project.projectimage} alt="Project Image" className='swiper-image'/>
+                        <h4>{project.projectname}</h4>
+                        <p>{project.description}</p>
+                      </div>
+                    </swiper-slide>
                   </>
                 )
               }
             })
             }
+            </swiper-container>
           </div>
         </div>
 

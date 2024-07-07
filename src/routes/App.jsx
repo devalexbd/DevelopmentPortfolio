@@ -5,7 +5,6 @@ register();
 import { useState, useRef, useEffect } from 'react'
 import '../assets/styles/App.css'
 import projectData from '../data/projects.json'
-import ProjectPreview from '../components/ProjectPreview'
 import codeData from '../data/coding.json'
 import Code from '../components/Code'
 

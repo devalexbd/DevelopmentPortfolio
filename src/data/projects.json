@@ -8,7 +8,7 @@
     },
     {
         "projectname" : "Banking App",
-        "description" : "Creating a banking app that could deposit and withdraw funds. I was also given the added task of completing this in TypeScript.",
+        "description" : "A banking app where funds can be deposited and withdrawn. Created using TypeScript.",
         "projectimage" : "images/project_banking.png",
         "link" : "https://devalexbd.github.io/bankingapp",
         "current" : "no"
@@ -29,7 +29,7 @@
     },
     {
         "projectname" : "Swiper Test",
-        "description" : "Creating a modern slider using Swiper.js.",
+        "description" : "A modern slider using Swiper.js.",
         "projectimage" : "images/project_carousel.png",
         "link" : "https://devalexbd.github.io/Carousel/",
         "current" : "no"
@@ -39,6 +39,13 @@
         "description" : "Using APIs to display images and text.",
         "projectimage" : "images/project_api.png",
         "link" : "https://devalexbd.github.io/using-APIs/",
+        "current" : "no"
+    },
+    {
+        "projectname" : "Number Guessing Game",
+        "description" : "A JavaScript game where the user must guess the random number.",
+        "projectimage" : "images/project_numbergame.png",
+        "link" : "https://devalexbd.github.io/numbergame/",
         "current" : "no"
     }
 ]

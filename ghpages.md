@@ -10,7 +10,7 @@ NOTE: This is tailored specifically for React.js projects created with Vite.
 
 First I have to install the Node.js package.
 
-
+![Installing gh-pages](https://github.com/devalexbd/DevelopmentPortfolio/blob/main/src/documentation/gh_pages.JPG?raw=true)
 
 ## Step 2: Edit vite.config.js
 
@@ -20,7 +20,7 @@ If you're simply hosting your GitHub repositor with GitHub Pages, the base value
 
 If you're using a custom domain name, check here.
 
-
+![Screenshot of me editing vite.config.js](https://github.com/devalexbd/DevelopmentPortfolio/blob/main/src/documentation/config_base.JPG?raw=true)
 
 ## Step 3: Add New Scripts to package.json
 
@@ -28,7 +28,8 @@ The following scripts must then be added to the 'scripts' object in `package.jso
 
 `"predeploy": "npm run build"`, `"deploy": "gh-pages -d dist"`, `"clean": "rm -rf dist"`.
 
-
+![Adding predeploy and deploy](https://github.com/devalexbd/DevelopmentPortfolio/blob/main/src/documentation/scripts1.JPG?raw=true)
+![Adding clean](https://github.com/devalexbd/DevelopmentPortfolio/blob/main/src/documentation/scripts2.JPG?raw=true)
 
 ## Step 4: Commit Changes
 

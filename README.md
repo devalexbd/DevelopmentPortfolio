@@ -8,3 +8,5 @@ My goal is for this site to show the programming langauges I'm familiar with and
 ----
 
 ## Contents
+
+ - [gh-pages Node.js Package](ghpages.md)

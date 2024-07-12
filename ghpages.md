@@ -20,7 +20,7 @@ If you're simply hosting your GitHub repositor with GitHub Pages, the base value
 
 If you're using a custom domain name, check here.
 
-![Screenshot of me editing vite.config.js](https://github.com/devalexbd/DevelopmentPortfolio/blob/main/src/documentation/config_base.JPG?raw=true)
+![Screenshot of me editing vite.config.js](https://github.com/devalexbd/DevelopmentPortfolio/blob/main/src/documentation/config_base1.JPG?raw=true)
 
 ## Step 3: Add New Scripts to package.json
 
